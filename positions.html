@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previous Positions - Madeline Woo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+
+        nav {
+            background: #1a1a1a;
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff9a9e;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #ffcba4 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-family: 'Playball', cursive;
+            font-size: 4.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+            letter-spacing: 2px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .section {
+            background: white;
+            margin: 2rem 0;
+            padding: 3rem 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+
+        .job-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .job-header {
+            border-left: 4px solid #ff9a9e;
+            padding-left: 1rem;
+            cursor: pointer;
+            user-select: none;
+            position: relative;
+            transition: background 0.3s;
+            padding: 1rem;
+            padding-right: 3rem;
+            margin-left: 0;
+            border-radius: 4px;
+        }
+
+        .job-header:hover {
+            background: #fffaf7;
+        }
+
+        .job-header::after {
+            content: '▼';
+            position: absolute;
+            right: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: transform 0.3s;
+            color: #ff9a9e;
+            font-size: 0.8rem;
+        }
+
+        .job-header.collapsed::after {
+            transform: translateY(-50%) rotate(-90deg);
+        }
+
+        .job-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #ff6b9d;
+            margin-bottom: 0.3rem;
+        }
+
+        .job-period {
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        .job-description {
+            overflow: hidden;
+            max-height: 2000px;
+            transition: max-height 0.5s ease, opacity 0.3s ease, margin-top 0.3s ease;
+            opacity: 1;
+            margin-top: 1rem;
+            padding-left: 1rem;
+        }
+
+        .job-description.collapsed {
+            max-height: 0;
+            opacity: 0;
+            margin-top: 0;
+        }
+
+        .job-description p {
+            margin-bottom: 0.8rem;
+            color: #555;
+        }
+
+        .job-description p:last-child {
+            margin-bottom: 0;
+        }
+
+        .job-description a {
+            color: #ff6b9d;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .job-description a:hover {
+            color: #ffcba4;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 3rem;
+            }
+
+            nav ul {
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="positions.html">Previous Positions</a></li>
+            <li><a href="journalistic.html">Journalistic Projects</a></li>
+            <li><a href="other.html">Other Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <h1>Previous Positions</h1>
+    </div>
+
+    <div class="container">
+        <section class="section">
+            <div class="job-item">
+                <div class="job-header collapsed">
+                    <div class="job-title">Assistant Video Producer - Daily Bruin</div>
+                    <div class="job-period">May 2024 - June 2025</div>
+                </div>
+                <div class="job-description collapsed">
+                    <p>As an Assistant Video Producer, I helped lead the Video section through distributing assignments, instructing staff members, giving feedback on work, and organizing and leading meetings and socials.</p>
+                    <p>Being an editor, I had the opportunity to cover events both on and off campus, ranging from club fundraisers to political protests and rallies.</p>
+                    <p>I also conducted a livestream of the Undergraduate Students Association Council election debates.</p>
+                    <p>I produced breaking stories on tight deadlines as well as worked on long term projects.</p>
+                    <p>I helped create a weekly news show which recapped community and sports events, titled On The Steps. (You can find the episodes in this <a href="https://youtube.com/playlist?list=PLFqlb7Y9QntphDHVjZq1XKtUPBL-ontPw&si=ql7mtD3Zr8dA0Kwi" target="_blank">playlist</a> on the <a href="https://www.youtube.com/@UCLADailyBruin" target="_blank">Daily Bruin YouTube Channel</a>!)</p>
+                    <p>Throughout this time, I learned valuable skills such as reaching out to clubs and organizations about interviews and filming, but the most valuable thing I learned, in my opinion, was the ability to tell meaningful stories through a camera in a way that connected my audience with the people and events in my frame.</p>
+                </div>
+            </div>
+
+            <div class="job-item">
+                <div class="job-header collapsed">
+                    <div class="job-title">Video Staff - Daily Bruin</div>
+                    <div class="job-period">January 2023 - May 2024</div>
+                </div>
+                <div class="job-description collapsed">
+                    <p>As Video Staff, I was tasked with researching, filming, and editing videos on news and information concerning the UCLA student population. I picked up multiple different projects and series both as a contributor and a leader. I also was a mentor to newer members.</p>
+                    <p>Through this job, I have had the opportunity to augment skills like Adobe Premiere Pro proficiency, communication, coordination, editing, interviewing, making deadlines, organization, researching, and videography.</p>
+                </div>
+            </div>
+
+            <div class="job-item">
+                <div class="job-header collapsed">
+                    <div class="job-title">Video Intern - Daily Bruin</div>
+                    <div class="job-period">October 2022 - December 2022</div>
+                </div>
+                <div class="job-description collapsed">
+                    <p>During this first quarter of my involvement with the publication, I learned the "ins and outs" of the Video section and of the Daily Bruin as a whole.</p>
+                </div>
+            </div>
+
+            <div class="job-item">
+                <div class="job-header collapsed">
+                    <div class="job-title">Documentary Journalism Student - National Student Leadership Conference</div>
+                    <div class="job-period">June 2020</div>
+                </div>
+                <div class="job-description collapsed">
+                    <p>As a participant, I attended leadership seminars, learned about and practiced documentary journalism from a professional, got an insider look on the news industry, experienced life on a college campus, and met other students from across the country.</p>
+                    <p>I contributed to multiple videos but primarily worked on one documentary which I filmed and edited with one of my peers.</p>
+                    <p>Through this experience, I made lasting friendships as well as learned valuable filmmaking techniques and leadership skills.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Collapsible job sections
+        document.querySelectorAll('.job-header').forEach(header => {
+            header.addEventListener('click', function() {
+                const description = this.nextElementSibling;
+                this.classList.toggle('collapsed');
+                description.classList.toggle('collapsed');
+            });
+        });
+    </script>
+</body>
+</html>
